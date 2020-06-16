@@ -2,10 +2,10 @@ import React from 'react';
 
 import * as S from './styles'
 
-const Button = () => {
+const Button = ({ textContent }) => {
   return (
     <>
-    <S.Button>Log in</S.Button>
+      <S.Button textContent={textContent}>{textContent}</S.Button>
     </>
   );
 };

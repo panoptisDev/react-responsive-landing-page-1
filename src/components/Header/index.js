@@ -30,7 +30,7 @@ const Header = () => {
             <img src={Medal} alt="Medal simbol" />
             <Link>Verify Certificate</Link>
           </div>
-          <Button />
+          <Button textContent="Log in"/>
         </S.ButtonsGroup>
 
 
