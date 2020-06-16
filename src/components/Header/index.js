@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import * as S from './styles'
 import Button from '../../components/Button';
 import MAQs from '../../assets/MAQs.svg'
-import Vector from '../../assets/Vector.svg'
+import Medal from '../../assets/Medal.svg'
 
 const Header = () => {
   return (
@@ -27,7 +27,7 @@ const Header = () => {
 
         <S.ButtonsGroup>
           <div>
-            <img src={Vector} alt="Medal simbol" />
+            <img src={Medal} alt="Medal simbol" />
             <Link>Verify Certificate</Link>
           </div>
           <Button />

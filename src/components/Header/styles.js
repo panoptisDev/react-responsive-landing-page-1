@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 
-
-
 export const NavBar = styled.nav`
   display: flex;
-  padding: 30px 40px;
+  height: 15vh;
+  margin: 0 40px;
 
   & a {
     align-self: center;
@@ -38,6 +37,7 @@ export const Links = styled.div`
 
 export const ButtonsGroup = styled.div`
   display: flex;
+  align-self: center;
   margin-left: auto;
 
   & div{
@@ -50,12 +50,13 @@ export const ButtonsGroup = styled.div`
 
     & a {
       text-decoration: none;
+      font-weight: 500;
+      color: #000000;
+    }
+    
+    & a:hover{
+      font-weight: 700;
     }
 
   }
-`;
-
-
-export const Banner = styled.div`
-  
 `;

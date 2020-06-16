@@ -7,6 +7,25 @@ const Home = () => {
   return (
     <>
       <Header/>
+
+      <S.BannerWrapper>
+
+        <S.BannerContainer>
+          <p>aaaaa</p>
+          <p>bbbbb</p>
+        </S.BannerContainer>
+
+      </S.BannerWrapper>
+
+      <S.Wrapper>
+
+      </S.Wrapper>
+
+      <S.Wrapper>
+
+      </S.Wrapper>
+
+
     </>
   );
 };
