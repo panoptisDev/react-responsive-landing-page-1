@@ -3,11 +3,10 @@ import styled from 'styled-components';
 
 
 export const DirectorWrapper = styled.div`
-  margin: 0 165px;
+  margin: 110px 165px;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10vw;
-  height: 100vh;
   align-items: center;
   justify-self: center;
 
@@ -18,11 +17,11 @@ export const DirectorTexts = styled.div`
 
   max-width: 470px;
 
-
   & h1{
     font-size: 32px;
     line-height: 42px;
     font-weight: 500;
+    text-align: start;
   }
 
   & h2 {
@@ -41,7 +40,6 @@ export const DirectorTexts = styled.div`
 
   & a {
     font-size: 16px;
-    fill: linear gradient #00CEC8  0% #7A88FF 100%;
   }
 
   
