@@ -6,9 +6,36 @@ export const BannerWrapper = styled.div`
 `;
 
 export const BannerContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `;
+
+export const BannerContent = styled.div`
+  display: inline-block;
+  margin: auto auto;
+  width: 24vw;
+
+  & h1 {
+    font-size: 56px;
+    font-family: 'Product Sans';
+    font-weight: 500;
+  }
+
+  & h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  & button {
+    margin-top: 60px;
+  }
+`;
+
+
+
+
+
+
 
 export const Wrapper = styled.div`
   background: #FFF;
