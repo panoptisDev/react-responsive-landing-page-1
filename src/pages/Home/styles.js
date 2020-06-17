@@ -17,5 +17,14 @@ export const HomeContainer = styled.div`
 export const UpcomingTrainingList = styled.div`
   display: flex;
   justify-content: center;
+
+  @media(max-width: 800px) {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+
+
 `;
 

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
 
+
   margin: 0 22px;
 
   & h2 {
@@ -31,9 +32,4 @@ export const Card = styled.div`
     font-weight: 700;
   }
 
-
-  & button {
-    width: 120px;
-    height: 40px;
-  }
 `;

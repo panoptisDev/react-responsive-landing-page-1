@@ -11,7 +11,10 @@ const TrainingCard = ({ courseImage, courseTitle, batch, deadLine, courseFee }) 
       <h2>Batch No: {batch}</h2>
       <h2>Deadline: {deadLine}</h2>
       <h2>Course Fee: Tk.{courseFee}</h2>
-      <Button textContent="Details"/>
+      <Button 
+      textContent="Details"
+      height={40}
+      width={120}/>
     </S.Card>
   );
 };

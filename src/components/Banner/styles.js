@@ -37,7 +37,5 @@ export const BannerContent = styled.div`
 
   & button {
     margin-top: 60px;
-    width: 200px;
-    height: 60px;
   }
 `;
