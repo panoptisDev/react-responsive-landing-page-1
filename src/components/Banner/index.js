@@ -1,16 +1,13 @@
 import React from 'react';
 
-import ImageBanner from '../../assets/ImageBanner.svg'
-import BlueCircles from '../../assets/BlueCircles.svg'
-import OrangeCircles from '../../assets/OrangeCircles.svg'
-import Button from '../../components/Button'
+import ImageBanner from '../../assets/ImageBanner.svg';
+import Button from '../../components/Button';
 
 import * as S from './styles'
 
 const Banner = () => {
   return (
     <S.BannerWrapper>
-      <img src={OrangeCircles} alt="image details" />
 
       <S.BannerContainer>
 
@@ -20,11 +17,8 @@ const Banner = () => {
           <Button textContent="Enroll Now" />
         </S.BannerContent>
 
-        <S.BannerImages>
-          <img src={ImageBanner} alt="main image banner" />
-          <img src={BlueCircles} alt="image details" />
+        <img src={ImageBanner} alt="main image banner" />
 
-        </S.BannerImages>
       </S.BannerContainer>
 
     </S.BannerWrapper>

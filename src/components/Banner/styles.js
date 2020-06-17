@@ -3,26 +3,23 @@ import styled from 'styled-components'
 export const BannerWrapper = styled.div`
   background: linear-gradient(90deg, #FFFCEB 0%, #EAFFFE 100%);
   height: 90vh;
-
-  & > img {
-    position: absolute;
-    right: 45%;
-    top: 12%;
-  }
-
-  
 `;
 
 export const BannerContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
 
+  & img {
+    margin-top: 45px;
+  }
   
 `
-
 export const BannerContent = styled.div`
-  display: inline-block;
-  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
   max-width: 380px;
 
   & h1 {
@@ -43,17 +40,4 @@ export const BannerContent = styled.div`
     width: 200px;
     height: 60px;
   }
-`;
-
-
-export const BannerImages = styled.div`
-    position: relative;
-
-  & img:nth-child(2) {
-    position: absolute;
-    right: 40px;
-    top: 75%;
-  }
-
-  
 `;

@@ -3,19 +3,17 @@ import styled from 'styled-components';
 
 
 export const DirectorWrapper = styled.div`
-  margin: 110px 165px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 10vw;
-  align-items: center;
-  justify-self: center;
-
+  margin: 50px 0;
+  display: flex;
+  align-self: center;
+  justify-content: center;
 `;
 
 
 export const DirectorTexts = styled.div`
 
   max-width: 470px;
+  margin-left: 140px;
 
   & h1{
     font-size: 32px;
