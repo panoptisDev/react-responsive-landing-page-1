@@ -20,7 +20,7 @@ const Banner = () => {
           width={200} />
         </S.BannerContent>
 
-        <img src={ImageBanner} alt="main image banner" />
+        <img src={ImageBanner} alt="main banner" />
 
       </S.BannerContainer>
 

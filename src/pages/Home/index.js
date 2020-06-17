@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import * as S from './styles';
 import Header from '../../components/Header';
 import Banner from '../../components/Banner'
 import TrainingCard from '../../components/TrainingCard';
 import DirectorSection from '../../components/DirectorSection';
-import Oracle from '../../assets/Oracle.svg'
-import Python from '../../assets/Python.svg'
-import Android from '../../assets/Android.svg'
-import Cisco from '../../assets/Cisco.svg'
+import Oracle from '../../assets/Oracle.svg';
+import Python from '../../assets/Python.svg';
+import Android from '../../assets/Android.svg';
+import Cisco from '../../assets/Cisco.svg';
 
 const TRAINING_CARD_MOCKS = [
   {

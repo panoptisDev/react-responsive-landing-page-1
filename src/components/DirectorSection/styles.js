@@ -1,19 +1,22 @@
 import styled from 'styled-components';
 
-
-
 export const DirectorWrapper = styled.div`
   margin: 50px 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
   align-self: center;
-  justify-content: center;
-`;
 
+
+  @media(max-width: 768px){
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+`;
 
 export const DirectorTexts = styled.div`
 
   max-width: 470px;
-  margin-left: 140px;
 
   & h1{
     font-size: 32px;
@@ -39,7 +42,6 @@ export const DirectorTexts = styled.div`
   & a {
     font-size: 16px;
   }
-
   
 `;
 

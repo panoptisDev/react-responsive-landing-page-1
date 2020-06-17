@@ -8,7 +8,7 @@ import DirectorPhoto from '../../assets/DirectorPhoto.svg'
 const DirectorSection = () => {
   return (
     <S.DirectorWrapper>
-      <img src={DirectorPhoto} alt="" />
+      <img src={DirectorPhoto} alt="Director" />
 
 
       <S.DirectorTexts>

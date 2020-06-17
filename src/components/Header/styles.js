@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
-
 export const NavBar = styled.nav`
   display: flex;
   height: 10vh;
   margin: 0 40px;
+
+  display: none;
 
   & a {
     align-self: center;
@@ -19,7 +20,7 @@ export const Links = styled.div`
   
   display: flex;
   align-self: center;
-
+  
   & a{
     text-decoration: none;
     display: flex;
@@ -28,6 +29,10 @@ export const Links = styled.div`
     text-transform: uppercase;
     font-weight: 500;
     color: #000000;
+
+    @media(max-width: 770px){
+      font-size: 2em;
+    } 
   }
 
   & a:hover{
@@ -57,6 +62,5 @@ export const ButtonsGroup = styled.div`
     & a:hover{
       font-weight: 700;
     }
-
   }
 `;
