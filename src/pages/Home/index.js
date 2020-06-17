@@ -11,8 +11,45 @@ import Python from '../../assets/Python.svg'
 import Android from '../../assets/Android.svg'
 import Cisco from '../../assets/Cisco.svg'
 
+const TRAINING_CARD_MOCKS = [
+  {
+    courseImage: Oracle,
+    courseTitle: "Intruduction to Training Programme on Oracle",
+    batch: "23",
+    deadLine: "12 Mar 2020",
+    courseFee: 18000
+  },
+  {
+    courseImage: Python,
+    courseTitle: "Intruduction to Training Programme on Python",
+    batch: "21",
+    deadLine: "18 Mar 2020",
+    courseFee: 10000
+  },
+  {
+    courseImage: Android,
+    courseTitle: "Professional Android Application Development",
+    batch: "01",
+    deadLine: "22 Mar 2020",
+    courseFee: 18000
+  },
+  {
+    courseImage: Cisco,
+    courseTitle: "Server and Internet Security Administrator",
+    batch: "06",
+    deadLine: "23 Mar 2020",
+    courseFee: 18000
+  },
+];
 
 const Home = () => {
+  const [trainingCards, setTrainingCards] = React.useState([]);
+
+  React.useEffect(() => {
+    //Simulated request
+    setTrainingCards(TRAINING_CARD_MOCKS);
+  }, []);
+
   return (
     <>
       <Header />
@@ -26,38 +63,21 @@ const Home = () => {
 
         <S.UpcomingTrainingList>
 
-          <TrainingCard
-            courseImage={Oracle}
-            courseTitle="Intruduction to Training Programme on Oracle"
-            batch="23"
-            deadLine="12 Mar 2020"
-            courseFee="18000.00" />
+          {
+            trainingCards.map(item => (
+              <TrainingCard
+                courseImage={item.courseImage}
+                courseTitle={item.courseTitle}
+                batch={item.batch}
+                deadLine={item.deadLine}
+                courseFee={item.courseFee}
+              />
+            ))
+          }
 
-          <TrainingCard
-            courseImage={Python}
-            courseTitle="Intruduction to Training Programme on Python"
-            batch="21"
-            deadLine="18 Mar 2020"
-            courseFee="10000.00" />
-
-          <TrainingCard
-            courseImage={Android}
-            courseTitle="Professional Android Application Development"
-            batch="01"
-            deadLine="22 Mar 2020"
-            courseFee="18000.00" />
-
-          <TrainingCard
-            courseImage={Cisco}
-            courseTitle="Server and Internet Security Administrator"
-            batch="06"
-            deadLine="23 Mar 2020"
-            courseFee="18000.00" />
         </S.UpcomingTrainingList>
 
       </S.HomeContainer>
-
-
 
     </>
   );
