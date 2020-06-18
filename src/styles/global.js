@@ -9,7 +9,10 @@ export default createGlobalStyle`
   }
   html, body, #root {
     min-height: 100%;
+
+    @media(max-width: 768px){
     min-width: 110%;
+    }
   }
   body {
     background: #FFFFFF;

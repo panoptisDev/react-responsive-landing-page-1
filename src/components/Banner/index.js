@@ -1,9 +1,9 @@
 import React from 'react';
 
-import ImageBanner from '../../assets/ImageBanner.svg';
-import Button from '../../components/Button';
-
 import * as S from './styles'
+import Button from '../../components/Button';
+import ImageBanner from '../../assets/ImageBanner.svg';
+
 
 const Banner = () => {
   return (

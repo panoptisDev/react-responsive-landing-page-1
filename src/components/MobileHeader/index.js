@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
-import * as S from './styles';
 import Button from '../../components/Button';
 import MAQs from '../../assets/MAQs.svg';
 import Medal from '../../assets/Medal.svg';
+import * as S from './styles';
 
-const Header = () => {
+const MobileHeader = () => {
+
+  const [open, setOpen] = useState(false);
+
   return (
-    <S.NavBar>
-      <Link to="/"><img src={MAQs} alt="MAQs logo" /></Link>
-      <S.Links>
+    <S.MobileHeader>
+      <S.Links open={open}>
         <Link>home</Link>
         <Link>about us</Link>
         <Link>courses</Link>
@@ -21,6 +22,15 @@ const Header = () => {
         <Link>contact us</Link>
       </S.Links>
 
+      <S.BurgerIcon
+        open={open} 
+        onClick={() => setOpen(!open)}
+      >
+        <div />
+        <div />
+        <div />
+      </S.BurgerIcon>
+      <Link to="/"><img src={MAQs} alt="MAQs logo" /></Link>
 
       <S.ButtonsGroup>
         <div>
@@ -29,11 +39,8 @@ const Header = () => {
         </div>
         <Button textContent="Log in" />
       </S.ButtonsGroup>
-
-    </S.NavBar>
-
+    </S.MobileHeader>
   );
 };
 
-
-export default Header;
+export default MobileHeader;

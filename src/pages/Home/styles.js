@@ -36,6 +36,9 @@ export const UpcomingTrainingList = styled.div`
 
   @media(max-width: 770px) {
     grid-template-columns: 1fr;
+
   }
+
+  
 `;
 

@@ -2,17 +2,23 @@ import styled from 'styled-components';
 
 export const NavBar = styled.nav`
   display: flex;
-  height: 10vh;
-  margin: 0 40px;
+  min-height: 10vh;
+  max-height: 30px;
+  
+  max-width: 100%;
+  margin: 0 10px;
 
-  display: none;
-
+  
   & a {
     align-self: center;
   }
 
   & button {
     right: 0;
+  }
+
+  @media (max-width: 1024px){
+    display: none;
   }
 `;
 
@@ -21,23 +27,19 @@ export const Links = styled.div`
   display: flex;
   align-self: center;
   
-  & a{
-    text-decoration: none;
-    display: flex;
-    margin-left: 40px;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #000000;
+    & a{
+      text-decoration: none;
+      display: flex;
+      margin-left: 40px;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #000000; 
+    }
 
-    @media(max-width: 770px){
-      font-size: 2em;
-    } 
-  }
-
-  & a:hover{
-    font-weight: 700;
-  }
+    & a:hover{
+      font-weight: 700;
+    }
 `;
 
 export const ButtonsGroup = styled.div`

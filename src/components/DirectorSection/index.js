@@ -4,12 +4,10 @@ import { Link } from 'react-router-dom'
 import * as S from './styles'
 import DirectorPhoto from '../../assets/DirectorPhoto.svg'
 
-
 const DirectorSection = () => {
   return (
     <S.DirectorWrapper>
       <img src={DirectorPhoto} alt="Director" />
-
 
       <S.DirectorTexts>
         <h1>Message from Executive Director (MAQs)</h1>

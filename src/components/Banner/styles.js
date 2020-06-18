@@ -2,8 +2,12 @@ import styled from 'styled-components'
 
 export const BannerWrapper = styled.div`
   background: linear-gradient(90deg, #FFFCEB 0%, #EAFFFE 100%);
-  height: 100%;
+  height: 100vh;
+  margin-bottom: 30px;
 
+  @media (max-width: 1024px){
+    height: 100%;
+  }
 `;
 
 export const BannerContainer = styled.div`
@@ -36,6 +40,10 @@ export const BannerContent = styled.div`
   align-self: center;
 
   max-width: 380px;
+
+  @media(max-width: 1024px){
+      margin: 10px 15px;
+    }
 
   & h1 {
     font-size: 56px;

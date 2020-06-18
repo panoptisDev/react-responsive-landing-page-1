@@ -33,5 +33,4 @@ TrainingCard.propTypes = {
   courseFee: PropTypes.number.isRequired,
 }
 
-
 export default TrainingCard;

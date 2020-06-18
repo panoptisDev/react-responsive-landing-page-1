@@ -1,10 +1,13 @@
 import React from 'react';
 
 import * as S from './styles';
+
 import Header from '../../components/Header';
+import MobileHeader from '../../components/MobileHeader';
 import Banner from '../../components/Banner'
 import TrainingCard from '../../components/TrainingCard';
 import DirectorSection from '../../components/DirectorSection';
+
 import Oracle from '../../assets/Oracle.svg';
 import Python from '../../assets/Python.svg';
 import Android from '../../assets/Android.svg';
@@ -52,6 +55,7 @@ const Home = () => {
   return (
     <>
       <Header />
+      <MobileHeader />
       <Banner />
 
       <S.HomeContainer>
