@@ -69,6 +69,7 @@ const Home = () => {
           {
             trainingCards.map(item => (
               <TrainingCard
+                key={item.courseImage}
                 courseImage={item.courseImage}
                 courseTitle={item.courseTitle}
                 batch={item.batch}

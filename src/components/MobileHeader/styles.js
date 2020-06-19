@@ -50,7 +50,6 @@ export const BurgerIcon = styled.div`
 
     &:nth-child(3){
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
-      
     }
   }
 `;

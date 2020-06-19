@@ -12,20 +12,20 @@ const Header = () => {
     <S.NavBar>
       <Link to="/"><img src={MAQs} alt="MAQs logo" /></Link>
       <S.Links>
-        <Link>home</Link>
-        <Link>about us</Link>
-        <Link>courses</Link>
-        <Link>adminssion</Link>
-        <Link>feedback</Link>
-        <Link>gallery</Link>
-        <Link>contact us</Link>
+        <Link to="/">home</Link>
+        <Link to="/">about us</Link>
+        <Link to="/">courses</Link>
+        <Link to="/">adminssion</Link>
+        <Link to="/">feedback</Link>
+        <Link to="/">gallery</Link>
+        <Link to="/">contact us</Link>
       </S.Links>
 
 
       <S.ButtonsGroup>
         <div>
           <img src={Medal} alt="Medal simbol" />
-          <Link>Verify Certificate</Link>
+          <Link to="/">Verify Certificate</Link>
         </div>
         <Button textContent="Log in" />
       </S.ButtonsGroup>
