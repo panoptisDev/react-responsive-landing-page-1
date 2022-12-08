@@ -1,4 +1,5 @@
 ## Initializing/running project: 
+![alt text](https://iili.io/Hnfola4.png)
 
 - clone the repository `git clone github.com/leoorlandin/sem-processo-test`
 
